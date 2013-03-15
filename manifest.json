@@ -5,7 +5,19 @@
   "description": "This extension opens the first five results of a Google search in new tabs.",
   "version": "1.0",
 
-  "permissions": [
-    "tabs", "https://www.google.com/search?*"
+   "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+    },
+    
+    "permissions": [
+    "tabs", "https://www.google.com/search*"
+    ],
+    
+    "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["open_tabs.js"]
+    }
   ]
 }
