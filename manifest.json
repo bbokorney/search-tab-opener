@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Search Tab Opener",
-  "description": "This extension opens the first five results of a Google search in new tabs.",
+  "description": "This extension opens the first several results of a Google search in new tabs.",
   "version": "1.0",
 
    "background": {
